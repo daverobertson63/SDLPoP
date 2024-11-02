@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="any">
+      <UniqueIdentifier>{3fae1313-b3da-4acd-baaa-df0358e72a4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="any\any">
+      <UniqueIdentifier>{a27879ec-1220-4849-a671-105cade30a61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lighting.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\midi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opl3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\replay.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screenshot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg000.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg005.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg006.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg007.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg008.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg009.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seqtbl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stb_vorbis.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPLv3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\port_debug_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\ibm_snd1\res10000.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10001.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10002.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10003.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10004.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10005.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10006.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10007.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10008.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10009.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10010.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10011.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10012.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10013.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10014.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10015.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10016.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10017.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10018.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10019.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10020.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10021.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10022.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10023.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10024.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10025.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10026.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10027.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10028.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10029.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10030.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10031.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10032.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10033.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10034.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10035.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10036.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10037.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10038.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10039.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10040.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10041.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10042.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd1\res10043.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10044.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10045.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10046.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10047.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10048.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10049.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10050.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10051.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10052.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10053.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10054.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10055.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\ibm_snd2\res10056.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2000.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2001.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2002.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2003.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2004.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2005.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2006.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2007.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2008.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2009.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2010.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2011.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2012.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2013.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2014.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\levels\res2015.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\prince\res1.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data\prince\res10.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\icon.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="any\any\libjpeg.static.txt">
+      <Filter>any\any</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.props" Condition="Exists('packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{B4A7B1C3-DD51-4A3B-9BB9-FF5398490B02}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="packages\sdl2.nuget.redist.2.30.8\build\native\sdl2.nuget.redist.targets" Condition="Exists('packages\sdl2.nuget.redist.2.30.8\build\native\sdl2.nuget.redist.targets')" />
+    <Import Project="packages\sdl2.nuget.2.30.8\build\native\sdl2.nuget.targets" Condition="Exists('packages\sdl2.nuget.2.30.8\build\native\sdl2.nuget.targets')" />
+    <Import Project="packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets" Condition="Exists('packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets')" />
+    <Import Project="packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets" Condition="Exists('packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>H:\dev\SDLPoP-1.23\libs\SDL2-devel-2.30.8-VC\SDL2-2.30.8\include;H:\dev\SDLPoP-1.23\libs\SDL2_image-devel-2.8.2-VC\SDL2_image-2.8.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\data.c" />
+    <ClCompile Include="src\lighting.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\menu.c" />
+    <ClCompile Include="src\midi.c" />
+    <ClCompile Include="src\opl3.c" />
+    <ClCompile Include="src\options.c" />
+    <ClCompile Include="src\replay.c" />
+    <ClCompile Include="src\screenshot.c" />
+    <ClCompile Include="src\seg000.c" />
+    <ClCompile Include="src\seg001.c" />
+    <ClCompile Include="src\seg002.c" />
+    <ClCompile Include="src\seg003.c" />
+    <ClCompile Include="src\seg004.c" />
+    <ClCompile Include="src\seg005.c" />
+    <ClCompile Include="src\seg006.c" />
+    <ClCompile Include="src\seg007.c" />
+    <ClCompile Include="src\seg008.c" />
+    <ClCompile Include="src\seg009.c" />
+    <ClCompile Include="src\seqtbl.c" />
+    <ClCompile Include="src\stb_vorbis.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\data.h" />
+    <ClInclude Include="src\GPLv3.h" />
+    <ClInclude Include="src\opl3.h" />
+    <ClInclude Include="src\port_debug_private.h" />
+    <ClInclude Include="src\proto.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\ibm_snd1\res10000.bin" />
+    <None Include="data\ibm_snd1\res10001.bin" />
+    <None Include="data\ibm_snd1\res10002.bin" />
+    <None Include="data\ibm_snd1\res10003.bin" />
+    <None Include="data\ibm_snd1\res10004.bin" />
+    <None Include="data\ibm_snd1\res10005.bin" />
+    <None Include="data\ibm_snd1\res10006.bin" />
+    <None Include="data\ibm_snd1\res10007.bin" />
+    <None Include="data\ibm_snd1\res10008.bin" />
+    <None Include="data\ibm_snd1\res10009.bin" />
+    <None Include="data\ibm_snd1\res10010.bin" />
+    <None Include="data\ibm_snd1\res10011.bin" />
+    <None Include="data\ibm_snd1\res10012.bin" />
+    <None Include="data\ibm_snd1\res10013.bin" />
+    <None Include="data\ibm_snd1\res10014.bin" />
+    <None Include="data\ibm_snd1\res10015.bin" />
+    <None Include="data\ibm_snd1\res10016.bin" />
+    <None Include="data\ibm_snd1\res10017.bin" />
+    <None Include="data\ibm_snd1\res10018.bin" />
+    <None Include="data\ibm_snd1\res10019.bin" />
+    <None Include="data\ibm_snd1\res10020.bin" />
+    <None Include="data\ibm_snd1\res10021.bin" />
+    <None Include="data\ibm_snd1\res10022.bin" />
+    <None Include="data\ibm_snd1\res10023.bin" />
+    <None Include="data\ibm_snd1\res10024.bin" />
+    <None Include="data\ibm_snd1\res10025.bin" />
+    <None Include="data\ibm_snd1\res10026.bin" />
+    <None Include="data\ibm_snd1\res10027.bin" />
+    <None Include="data\ibm_snd1\res10028.bin" />
+    <None Include="data\ibm_snd1\res10029.bin" />
+    <None Include="data\ibm_snd1\res10030.bin" />
+    <None Include="data\ibm_snd1\res10031.bin" />
+    <None Include="data\ibm_snd1\res10032.bin" />
+    <None Include="data\ibm_snd1\res10033.bin" />
+    <None Include="data\ibm_snd1\res10034.bin" />
+    <None Include="data\ibm_snd1\res10035.bin" />
+    <None Include="data\ibm_snd1\res10036.bin" />
+    <None Include="data\ibm_snd1\res10037.bin" />
+    <None Include="data\ibm_snd1\res10038.bin" />
+    <None Include="data\ibm_snd1\res10039.bin" />
+    <None Include="data\ibm_snd1\res10040.bin" />
+    <None Include="data\ibm_snd1\res10041.bin" />
+    <None Include="data\ibm_snd1\res10042.bin" />
+    <None Include="data\ibm_snd1\res10043.bin" />
+    <None Include="data\ibm_snd2\res10044.bin" />
+    <None Include="data\ibm_snd2\res10045.bin" />
+    <None Include="data\ibm_snd2\res10046.bin" />
+    <None Include="data\ibm_snd2\res10047.bin" />
+    <None Include="data\ibm_snd2\res10048.bin" />
+    <None Include="data\ibm_snd2\res10049.bin" />
+    <None Include="data\ibm_snd2\res10050.bin" />
+    <None Include="data\ibm_snd2\res10051.bin" />
+    <None Include="data\ibm_snd2\res10052.bin" />
+    <None Include="data\ibm_snd2\res10053.bin" />
+    <None Include="data\ibm_snd2\res10054.bin" />
+    <None Include="data\ibm_snd2\res10055.bin" />
+    <None Include="data\ibm_snd2\res10056.bin" />
+    <None Include="data\levels\res2000.bin" />
+    <None Include="data\levels\res2001.bin" />
+    <None Include="data\levels\res2002.bin" />
+    <None Include="data\levels\res2003.bin" />
+    <None Include="data\levels\res2004.bin" />
+    <None Include="data\levels\res2005.bin" />
+    <None Include="data\levels\res2006.bin" />
+    <None Include="data\levels\res2007.bin" />
+    <None Include="data\levels\res2008.bin" />
+    <None Include="data\levels\res2009.bin" />
+    <None Include="data\levels\res2010.bin" />
+    <None Include="data\levels\res2011.bin" />
+    <None Include="data\levels\res2012.bin" />
+    <None Include="data\levels\res2013.bin" />
+    <None Include="data\levels\res2014.bin" />
+    <None Include="data\levels\res2015.bin" />
+    <None Include="data\prince\res1.bin" />
+    <None Include="data\prince\res10.bin" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\icon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="any\any\libjpeg.static.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\sdl2.nuget.redist.2.30.8\build\native\sdl2.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2.nuget.redist.2.30.8\build\native\sdl2.nuget.redist.targets'))" />
+    <Error Condition="!Exists('packages\sdl2.nuget.2.30.8\build\native\sdl2.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2.nuget.2.30.8\build\native\sdl2.nuget.targets'))" />
+    <Error Condition="!Exists('packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2_image.nuget.redist.2.8.2\build\native\sdl2_image.nuget.redist.targets'))" />
+    <Error Condition="!Exists('packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2_image.nuget.2.8.2\build\native\sdl2_image.nuget.targets'))" />
+  </Target>
+</Project>
