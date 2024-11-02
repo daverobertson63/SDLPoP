@@ -23,7 +23,7 @@ The authors of this program may be contacted at https://forum.princed.org
 #define _USE_MATH_DEFINES
 #include <math.h>
 #ifndef M_PI
-#define M_PI 3.14159265358979323846
+	#define M_PI 3.14159265358979323846
 #endif
 
 // data:461E
@@ -108,6 +108,7 @@ void pop_main() {
 	show_loading();
 	set_joy_mode();
 	cheats_enabled = check_param("megahit") != NULL;
+	
 	cheats_enabled = true;
 	
 #ifdef USE_DEBUG_CHEATS

@@ -1,6 +1,8 @@
 # SDLPoP
 
-An open-source port of Prince of Persia, based on the disassembly of the DOS version, extended with new features.
+An open-source port of Prince of Persia, based on the disassembly of the DOS version, extended with new features.  
+
+This version has been designed to work with Visual Studio 2022 GUI. Its based on https://github.com/NagyD/SDLPoP
 
 ## Links
 
@@ -404,7 +406,7 @@ You need to "merge" the contents of the `bin`, `include`, etc. folders in the ar
 
 To compile, open one of the .dev files and click the compile icon.
 
-#### Visual Studio
+#### Visual Studio 
 
 * Run `build.bat` in the `src/` directory.
 * For this to work, you first need to do two other things:
@@ -426,6 +428,11 @@ To compile, open one of the .dev files and click the compile icon.
        * Download the Visual C++ 32/64-bit development package, the `*-VC.zip` files.
     * (You could create a small batch file to automate the above steps on your system.)
 * Alternatively, you can also build SDLPoP using MSVC with NMake (use the makefile src/NMakefile).
+
+#### Visual Studio IDE
+
+* Tested on VS 2022
+* Should just run when opening the .SLN as it uses nuget packages
 
 #### CMake
 
